@@ -1,0 +1,27 @@
+# Ignore compiled class files
+*.class
+
+# Ignore build output directories
+/target/
+/bin/
+/build/
+
+# Ignore IDE specific files and directories
+/.idea/
+/.vscode/
+*.iml
+*.ipr
+*.iws
+
+### Eclipse
+.settings
+.classpath
+.project
+
+# Ignore Maven specific files
+/mvnw
+/mvnw.cmd
+/.mvn/
+
+.DS_Store
+test-output/
