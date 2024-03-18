@@ -17,8 +17,8 @@ mvn clean compile test
 (2) Install jdk11 on mac and add path into environment path inside ./bashrc_profile.
 (3) Type java --version and mvn --version.
 (4) I used WebDriverManager.
-(5) It is maven based porject so all necessary dependecnies will download it automatically once you import
-    this project in any preferable IDE.
+(5) It is maven based porject so all necessary dependecnies will download it automatically 
+    once you import this project in any preferable IDE.
 
 ```
 **(3) run test from different area:** 
@@ -32,12 +32,13 @@ mvn clean compile test
 ```
 ### **Structure about this framework:**
 ```
-1. Testbase package is the place where we can put all commom functionalty of the testcase as well as how to 
-   launch the browser.
+1. Testbase package is the place where we can put all commom functionalty of the testcase 
+   as well as how to launch the browser.
 
 2. config package with global variable for example testing url.
 
-3. page package where all id, name or xpath locator with common method dscribe here using page factory.
+3. page package where all id, name or xpath locator with common method dscribe here using 
+   page factory.
 
 4. testdata package holds a test data.
 
@@ -53,31 +54,46 @@ mvn clean compile test
 
 ### **Test Structure:**
 ```
-Tests are structured using TestNG annotations (@Test, @BeforeMethod, @AfterMethod). Each test method represents a scenario, such as searching on Google, Bing, etc. The Page Object Model (POM) design pattern is followed to represent web pages.
+Tests are structured using TestNG annotations (@Test, @BeforeMethod, @AfterMethod). 
+Each test method represents a scenario, such as searching on Google, Bing, etc. 
+The Page Object Model (POM) design pattern is followed to represent web pages.
 ``` 
 
 ### **Explanation::**
 ```
-1. Test Structure: We use TestNG for structuring and executing tests. Each test method represents a scenario, such as searching on Google, Bing, etc.
+1. Test Structure: We use TestNG for structuring and executing tests. Each test 
+   method represents a scenario, such as searching on Google, Bing, etc.
 
-2. Page Object Model: Each web page is represented by a corresponding Page Object. This helps in better organization of code, improves readability, and reduces duplication.
+2. Page Object Model: Each web page is represented by a corresponding Page Object. 
+   This helps in better organization of code, improves readability, and reduces 
+   duplication.
 
-3. Base Test Class: Contains setup and teardown methods to initialize WebDriver and perform cleanup after each test execution.
+3. Base Test Class: Contains setup and teardown methods to initialize WebDriver and 
+   perform cleanup after each test execution.
 
-4. Assertions: We use TestNG's soft assertions to collect all failures without halting the test execution.
+4. Assertions: We use TestNG's soft assertions to collect all failures without 
+   halting the test execution.
 ``` 
 
 ### **Considerations:**
 ```
-1. Design Patterns: The Page Object Model (POM) is an industry-standard design pattern for Selenium automation, providing a clean separation of concerns between test code and page-specific code.
+1. Design Patterns: The Page Object Model (POM) is an industry-standard design 
+   pattern for Selenium automation, providing a clean separation of concerns 
+   between test code and page-specific code.
 
-2. Enterprise-level Support: This framework can be extended to support enterprise-level applications by integrating with CI/CD pipelines, logging, reporting, and parallel test execution.
+2. Enterprise-level Support: This framework can be extended to support 
+   enterprise-level applications 
+   by integrating with CI/CD pipelines, logging, reporting, and parallel test execution.
 
-3. Minimization of Anti-patterns: By following POM, we avoid anti-patterns such as code duplication, tightly coupled code, and mixing of concerns.
+3. Minimization of Anti-patterns: By following POM, we avoid anti-patterns such as code 
+   duplication, tightly coupled code, and mixing of concerns.
 
-4. Extensibility: Adding support for new search engines or modifying existing tests is straightforward. Simply create new Page Object classes for the respective search engines and update test methods accordingly.
+4. Extensibility: Adding support for new search engines or modifying existing tests is 
+   straightforward. Simply create new Page Object classes for the respective search 
+   engines and update test methods accordingly.
 
-By adhering to these principles and patterns, the test framework ensures scalability, maintainability, and robustness, making it suitable for enterprise-level applications.
+By adhering to these principles and patterns, the test framework ensures scalability,
+maintainability, and robustness, making it suitable for enterprise-level applications.
 ``` 
 
 ``` 
